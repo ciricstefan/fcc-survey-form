@@ -6,14 +6,28 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+button {
+    margin: 2% auto;
+}
+
+label {
+    text-align: right;
+}
+
+a {
+    color: #0818c9;
+}
+
+hr {
+    height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
 #title {
     margin-top: 5%;
     margin-bottom: 2%;
     font-size: 3em;
-}
-
-.container {
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #description {
@@ -22,8 +36,8 @@ body {
     font-size: 2em;
 }
 
-label {
-    text-align: right;
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .restoflabels {
@@ -32,10 +46,6 @@ label {
 
 .leftside {
     text-align: left;
-}
-
-button {
-    margin: 2% auto;
 }
 
 @media (max-width: 576px) {
