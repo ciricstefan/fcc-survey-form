@@ -3,7 +3,9 @@
     <head>
         <title>FCC Survey Form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -11,33 +13,33 @@
             <header>
                 <h1 id="title">Survey Form</h1>
             </header>
-            <div class="container">
+            <div class="container border border-warning rounded-lg ">
                 <p id="description">Let us know how we can improve freeCodeCamp</p>
                 <form action="" id="survey-form">
                     <div class="form-group row">
-                        <label for="name" id="name-label" class="col-sm-2 col-form-label">* Name:</label>
-                        <div class="col-sm-10">
+                        <label for="name" id="name-label" class="col-sm col-form-label">* Name:</label>
+                        <div class="col-sm">
                             <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="email" id="email-label" class="col-sm-2 col-form-label">* Email:</label>
-                        <div class="col-sm-10">
+                        <label for="email" id="email-label" class="col-sm col-form-label">* Email:</label>
+                        <div class="col-sm">
                             <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="number" id="number-label" class="col-sm-2 col-form-label">* Age:</label>
-                        <div class="col-sm-10">
+                        <label for="number" id="number-label" class="col-sm col-form-label">* Age:</label>
+                        <div class="col-sm">
                             <input type="number" id="number" class="form-control" placeholder="Age" min="1" max="125" required>
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="role" id="dropdown" class="col-sm-2 col-form-label">Which option best describes your current role?</label>
-                        <div class="col-sm-10">
+                        <label for="role" id="dropdown" class="col-sm col-form-label">Which option best describes your current role?</label>
+                        <div class="col-sm">
                             <select id="dropdown" class="form-control">
                                 <option selected disabled>Select an option</option>
                                 <option>Student</option>
@@ -51,8 +53,8 @@
                     
                     <fieldset class="form-group">
                         <div class="row">
-                            <legend class="col-form-label col-sm-2 pt-0">* How likely is that you would recommend freeCodeCamp to a friend?</legend>
-                            <div class="col-sm-10">
+                            <legend class="col-form-label col-sm pt-0 restoflabels">* How likely is that you would recommend freeCodeCamp to a friend?</legend>
+                            <div class="col-sm leftside">
                                 <div class="form-check">
                                     <input type="radio" name="recommend" class="form-check-input" id="recommend1" required>
                                     <label for="recommend1" class="form-check-label">Definitely</label>
@@ -70,8 +72,8 @@
                     </fieldset>
 
                     <div class="form-group row">
-                        <label for="like" class="col-sm-2 col-form-label">What do you like most in FCC:</label>
-                        <div class="col-sm-10">
+                        <label for="like" class="col-sm col-form-label">What do you like most in FCC:</label>
+                        <div class="col-sm">
                             <select id="like" class="form-control">
                                 <option selected disabled>Select an option</option>
                                 <option>Challenges</option>
@@ -83,8 +85,8 @@
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-sm-2">Things that should be improved in the future (Check all that apply):</div>
-                        <div class="col-sm-10">
+                        <div class="col-sm restoflabels">Things that should be improved in the future (Check all that apply):</div>
+                        <div class="col-sm leftside">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="op1" value="Front-end Projects">
                                 <label for="op1" class="form-check-label">Front-end Projects</label>
@@ -133,8 +135,10 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="comment">Any Comments or Suggestions?</label>
-                        <textarea id="comment" rows="5" class="form-control" placeholder="Enter your comment here..."></textarea>
+                        <label for="comment" class="col-sm col-form-label">Any Comments or Suggestions?</label>
+                        <div class="col-sm">
+                            <textarea id="comment" class="form-control" rows="5" class="form-control" placeholder="Enter your comment here..."></textarea>
+                        </div>
                     </div>
 
                     <div class="form-group row">

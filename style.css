@@ -1,0 +1,49 @@
+body {
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#title {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 3em;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#description {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2em;
+}
+
+label {
+    text-align: right;
+}
+
+.restoflabels {
+    text-align: right;
+}
+
+.leftside {
+    text-align: left;
+}
+
+button {
+    margin: 2% auto;
+}
+
+@media (max-width: 576px) {
+    label {
+        text-align: left;
+    }
+
+    .restoflabels {
+        text-align: left;
+    }
+}
